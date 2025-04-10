@@ -7,18 +7,21 @@
 
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', 'Courier', monospace; /* Tipografía tipo máquina de escribir */
     line-height: 1.6;
-    color: #333;
+    color: #3C2F2F; /* Marrón oscuro retro */
+    background-color: #F5E8C7; /* Beige desgastado */
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* Textura papel vintage */
 }
 
 /* Navbar */
 header {
-    background-color: #2c3e50;
-    padding: 1rem;
+    background-color: #4A5E47; /* Verde militar mate */
+    padding: 1.5rem;
     position: fixed;
     width: 100%;
     top: 0;
+    border-bottom: 3px solid #D97706; /* Borde naranja quemado */
 }
 
 nav {
@@ -30,7 +33,11 @@ nav {
 }
 
 nav h1 {
-    color: white;
+    color: #FDF6E3; /* Crema claro */
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 nav ul {
@@ -43,67 +50,92 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #FDF6E3;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #3498db;
+    color: #D4A017; /* Amarillo mostaza desgastado */
 }
 
 /* Secciones */
 section {
-    padding: 4rem 2rem;
-    max-width: 1200px;
+    padding: 5rem 2rem;
+    max-width: 900px;
     margin: 0 auto;
+    background-color: rgba(253, 246, 227, 0.8); /* Crema semi-transparente */
+    border: 1px solid #8C5523; /* Bronce */
+    margin-bottom: 2rem;
 }
 
 #sobre-mi {
-    margin-top: 80px; /* Espacio para el navbar fijo */
+    margin-top: 100px; /* Espacio por el navbar fijo */
 }
 
 h2 {
-    color: #2c3e50;
+    color: #A61C2E; /* Rojo vintage */
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
     margin-bottom: 1rem;
+    border-bottom: 2px dashed #D97706; /* Línea punteada naranja */
+    padding-bottom: 0.5rem;
 }
 
-ul {
-    list-style: none;
+p, ul {
+    font-size: 1.1rem;
+}
+
+/* Habilidades */
+#habilidades ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 #habilidades ul li {
-    display: inline-block;
-    background-color: #ecf0f1;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
+    background-color: #D4A017; /* Amarillo mostaza */
+    color: #3C2F2F;
+    padding: 0.6rem 1.4rem;
     border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra retro */
 }
 
+/* Contacto */
 button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
+    background-color: #A61C2E; /* Rojo vintage */
+    color: #FDF6E3;
+    border: 2px solid #8C5523; /* Borde bronce */
+    padding: 0.7rem 1.5rem;
     cursor: pointer;
-    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #D97706; /* Naranja quemado */
 }
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
-    color: white;
+    background-color: #4A5E47; /* Verde militar */
+    color: #FDF6E3;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
+    border-top: 3px solid #D97706;
+    font-weight: bold;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
+        text-align: center;
     }
 
     nav ul {
@@ -111,6 +143,10 @@ footer {
     }
 
     nav ul li {
-        margin: 0.5rem 1rem;
+        margin: 0.8rem 1rem;
+    }
+
+    section {
+        padding: 3rem 1.5rem;
     }
 }
